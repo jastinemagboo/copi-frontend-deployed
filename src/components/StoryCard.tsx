@@ -45,7 +45,7 @@ export default function StoryCard({ post, editPost, deletePost }: Props) {
     if (!dateStr) return '';
     return new Date(dateStr)
       .toLocaleString('en-US', {
-        timeZone: 'UTC', // Use UTC, so no shift
+        timeZone: 'Asia/Manila', // Use UTC, so no shift
         year: 'numeric',
         month: 'long',
         day: 'numeric',
